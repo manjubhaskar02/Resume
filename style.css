@@ -1,0 +1,61 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.svg-wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-20%);
+    width: 300px;
+    margin: 0;
+
+}
+
+.rectangle {
+    stroke-dasharray: 100 540;
+    stroke-dashoffset: -463;
+    stroke-width: 10px;
+    fill: transparent;
+    stroke: #19f6e8;
+    border-bottom: 5px solid black;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+
+
+.svg-wrapper:hover .rectangle {
+    stroke-width: 6px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+}
+
+#dark img {
+    box-shadow: -3px 5px 15px #000;
+}
+
+#dark img:hover {
+    -moz-box-shadow: 0 0 5px #fff;
+    -webkit-box-shadow: 0 0 5px #fff;
+    box-shadow: 0px 0px 5px #fff;
+    -webkit-transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+
+
+}
+
+.effect img {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -1px, 0);
+    -webkit-transition: opacity .35s, -webkit-transform .35s;
+    transition: opacity .35s, transform .35s;
+}
+
+.effect:hover img {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0) scale(1.1, 1.1);
+    -webkit-transition-delay: .15s;
+    transition-delay: .15s
+}
