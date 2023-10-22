@@ -73,20 +73,115 @@ html {
 }
 
 
-.progress-3 {
-    width: 120px;
-    height: 20px;
-    border-radius: 20px;
-    background:
-        repeating-linear-gradient(135deg, hsl(6, 100%, 80%) 0 10px, hsl(335, 100%, 65%) 0 20px) 0/0% no-repeat,
-        repeating-linear-gradient(135deg, #ddd 0 10px, #eee 0 20px) 0/100%;
-    box-shadow: 0px 10px 40px -2px hsl(335, 100%, 65%);
 
-    animation: p3 4s normal forwards;
+.skills {
+    border-radius: 10px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
-@keyframes p3 {
+.skills-bar .bar .progress-line {
+    position: relative;
+    height: 16px;
+    width: 500px;
+    background: #0960a36b;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span {
+    position: absolute;
+    background-image: linear-gradient(to right, hsl(265.88deg 100% 80%), hsl(335, 100%, 65%));
+    box-shadow: 0px 10px 40px -2px hsl(335, 100%, 65%);
+    height: 100%;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
     100% {
-        background-size: 90%
+        transform: scaleX(1);
+    }
+}
+
+.progress-line .html {
+    width: 95%;
+}
+
+.progress-line .css {
+    width: 95%;
+}
+
+.progress-line .tailwind {
+    width: 90%;
+}
+
+.progress-line .bootstrap {
+    width: 80%;
+}
+
+.progress-line .javascript {
+    width: 50%;
+}
+
+
+.bar .progress-line span::before {
+    position: absolute;
+    content: "";
+    height: 0;
+    right: 0;
+    top: -14px;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 100px;
+    border-right-width: 0px;
+}
+
+.bar .progress-line span::after {
+    position: absolute;
+    right: 0;
+    top: -28px;
+    color: #f0f0f0;
+    font-size: 12px;
+    font-weight: 700;
+    background: #066d96;
+    padding: 1px 8px;
+    border-radius: 100px;
+}
+
+
+.progress-line .html::after {
+    content: "95%";
+}
+
+.progress-line .css::after {
+    content: "95%";
+}
+
+.progress-line .tailwind::after {
+    content: "90%";
+}
+
+.progress-line .bootstrap::after {
+    content: "80%";
+}
+
+.progress-line .javascript::after {
+    content: "50%";
+}
+
+
+/* ////........Media Query........//// */
+
+@media (max-width: 700px) {
+    .skills {
+        width: 80%;
+    }
+
+    .skills-bar .bar .progress-line {
+        width: 100%;
     }
 }
