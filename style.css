@@ -6,6 +6,96 @@ html {
     scroll-behavior: smooth;
 }
 
+/* .header { */
+/* background-color: #fff; */
+/* box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1); */
+/* position: fixed; */
+/* width: 100%; */
+/* z-index: 3; */
+/* box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    padding: 40px; */
+/* } */
+
+.header ul {
+
+    overflow: hidden;
+}
+
+
+.header .menu {
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0px 0px 28px;
+    position: relative;
+    /* user-select: none; */
+}
+
+.header .menu-icon .navicon {
+    /* background: linear-gradient(to right, hsl(265.88deg 100% 80%), hsl(335, 100%, 65%)); */
+    background: #19f6e8;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: all .2s ease-out;
+    width: 24px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: linear-gradient(to right, hsl(265.88deg 100% 80%), hsl(335, 100%, 65%));
+    background: #19f6e8;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+
+
 .svg-wrapper {
     position: relative;
     top: 50%;
@@ -99,6 +189,9 @@ html {
     transform: scaleX(0);
     transform-origin: left;
     animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+
 }
 
 @keyframes animate {
@@ -148,7 +241,7 @@ html {
     font-size: 12px;
     font-weight: 700;
     background: #066d96;
-    padding: 1px 8px;
+    padding: 1px 6px;
     border-radius: 100px;
 }
 
@@ -176,12 +269,29 @@ html {
 
 /* ////........Media Query........//// */
 
-@media (max-width: 700px) {
-    .skills {
-        width: 80%;
-    }
+@media (max-width: 800px) {
+
 
     .skills-bar .bar .progress-line {
         width: 100%;
+    }
+}
+
+@media (min-width: 50em) {
+    .header li {
+        float: unset;
+    }
+
+    .header li a {
+        padding: 0px 30px;
+    }
+
+    .header .menu {
+        clear: none;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
     }
 }
