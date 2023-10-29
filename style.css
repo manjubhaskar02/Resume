@@ -207,9 +207,6 @@
      float: unset;
  }
 
- .header li a {
-     padding: 0px 30px;
- }
 
  .header .menu {
      clear: none;
@@ -231,7 +228,6 @@
  }
 
  .infobox {
-     font-family: 'Open Sans';
      font-weight: 400;
      color: #323232;
      background-color: #ad5fe212;
