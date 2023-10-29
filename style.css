@@ -283,7 +283,6 @@
 
      .header .menu-icon .navicon:before,
      .header .menu-icon .navicon:after {
-         background: linear-gradient(to right, hsl(265.88deg 100% 80%), hsl(335, 100%, 65%));
          background: #19f6e8;
          content: '';
          display: block;
