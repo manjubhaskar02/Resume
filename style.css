@@ -57,13 +57,15 @@
      transform: translate3d(0, -1px, 0);
      -webkit-transition: opacity .35s, -webkit-transform .35s;
      transition: opacity .35s, transform .35s;
+
  }
 
  .effect:hover img {
      -webkit-transform: translate3d(0, 0, 0);
      transform: translate3d(0, 0, 0) scale(1.1, 1.1);
      -webkit-transition-delay: .15s;
-     transition-delay: .15s
+     transition-delay: .15s;
+
  }
 
  @keyframes slide {
