@@ -8,39 +8,50 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
 
     <title>RESUME</title>
 </head>
 
 <body
-    class="py-16 mx-auto  grid place-items-center h-screen  lg:p-10  bg-gradient-to-r from-fuchsia-600  via-blue-900 via-sky-500  via-purple-500 to-pink-500 text-white ">
+    class="py-10 mx-auto  grid place-items-center h-screen  lg:p-10  bg-gradient-to-r from-fuchsia-600  via-blue-900 via-sky-500  via-purple-500 to-pink-500 text-white ">
     <main class="lg:flex   ">
         <section
             class="flex flex-row-reverse lg:flex-col justify-evenly lg:basis-2/6 lg:sticky lg:h-full lg:top-24 lg:left-0 ">
-            <div class="  lg:justify-items-center lg:mx-auto xl:pr-16 lg:py-10 ">
+            <div class="  lg:justify-items-center lg:mx-auto xl:pr-16 lg:pb-10 ">
                 <img class="w-24 ml-16 lg:ml-0 rounded-full lg:w-40 " src="assets/images/profilepic.png"
                     alt="MANJU BHASKAR">
-                <div class="font-bold text-2xl text-center">Manju Bhaskar</div>
-                <div class="social-menu">
-                    <ul>
-                        <li><a href="https://github.com/sanketbodke" target="blank"><i
-                                    class="fab fa-github"></i></i></a>
-                        </li>
-                        <li><a href="https://www.linkedin.com/in/sanket-bodake-995b5b205/" target="blank"><i
-                                    class="fab fa-linkedin-in"></i></a></li>
-                    </ul>
+                <div class="content relative font-bold text-2xl text-center">Manju Bhaskar
+                    <div class="social-menu flex ">
+                        <ul>
+                            <li><a href="https://github.com/manjubhaskar02" target="blank"><i
+                                        class="fab fa-github"></i></i></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/manju-bhaskar-9b5759271/" target="blank"><i
+                                        class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="mailto:manju.bhaskar.jaya@gmail.com" target="blank">
+                                    <i class="fa fa-at"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
             </div>
 
             <nav class="header py-10">
                 <input class="menu-btn" type="checkbox" id="menu-btn" />
                 <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
-                <ul class=" menu xl:ml-16 lg:ml-8 space-y-8 uppercase  ">
-
+                <ul class="heading text-[#f4d6de] pb-1 menu xl:ml-16 lg:ml-8 space-y-8 uppercase  lg:pt-10 ">
                     <li
                         class="ease-in-out transform  hover:text-teal-400 hover:underline underline-offset-8 decoration-teal-400">
                         <a href="#about">About Me</a>
@@ -53,21 +64,29 @@
                         class="ease-in-out transform  hover:text-teal-400 hover:underline underline-offset-8 decoration-teal-400">
                         <a href="#skills"> Skills</a>
                     </li>
+                    <li
+                        class=" ease-in-out transform  hover:text-teal-400 hover:underline underline-offset-8 decoration-teal-400">
+                        <a href="#contact"> Contact Me</a>
+                    </li>
                 </ul>
 
             </nav>
 
         </section>
-        <section class="px-3 py-20">
-            <div id="about" class="container mx-auto md:px-6 lg:pt-24 ">
-                <div class="svg-wrapper text-center   ">
+        <section class="px-3 py-20  ">
+            <div id="about" class="py-20 container lg:py-10 mx-auto md:px-6   ">
+                <div class="svg-wrapper text-center  mx-auto ">
                     <svg height="70" width="300">
                         <rect class="rectangle" height="70" width="300" />
-                        <div class="text relative top-[-54px] text-2xl lg:text-3xl ">ABOUT ME</div>
+                        <div class="text relative top-[-54px] text-2xl lg:text-3xl heading">
+                            ABOUT ME</div>
                     </svg>
                 </div>
                 <div>
-                    <p class="text-base text-center md:text-left lg:text-xl">A web developer with a passion for
+                    <p class="content mx-8 leading-loose text-[#faebd7] text-base text-center md:text-left lg:text-xl">A
+                        web
+                        developer with a
+                        passion for
                         crafting digital
                         experiences that
                         are not just
@@ -78,44 +97,44 @@
                 </div>
             </div>
 
-            <div id="portfolio" class="container mx-auto md:px-6 pt-28 ">
-                <div class="svg-wrapper text-center  ">
+            <div id="portfolio" class="container mx-auto md:px-6 lg:pt-20 ">
+                <div class="svg-wrapper text-center mx-auto ">
                     <svg height="70" width="300">
                         <rect class="rectangle" height="70" width="300" />
-                        <div class="text relative top-[-54px] text-2xl lg:text-4xl  ">PORTFOLIO</div>
+                        <div class="text relative top-[-54px] text-2xl lg:text-4xl heading ">PORTFOLIO</div>
                     </svg>
                 </div>
 
-                <div class="md:flex md:flex-wrap  md:-m-4 ">
-                    <div class="md:flex md:w-full flex-wrap px-1  " id="dark">
-                        <div class="md:w-2/5 p-1 md:p-2.5  effect">
+                <div class="gap-8 lg:gap-0 flex flex-wrap md:-m-4 lg:pt-6 ">
+                    <div class="gap-8 lg:gap-0 flex md:w-full flex-wrap px-1  " id="dark">
+                        <div class="w-3/4 mx-auto md:w-2/5 p-1 md:p-2.5  effect">
                             <a href="https://manjubhaskar02.github.io/Interactive-rating-component/"
                                 target="_blank"><img alt="gallery"
                                     class="block  h-full w-full  object-contain object-center"
                                     src="assets/images/ratingcomponent.png" /></a>
                         </div>
-                        <div class="md:w-3/5 p-1 md:p-2.5 effect ">
+                        <div class="w-3/4 mx-auto md:w-3/5 p-1 md:p-2.5 effect ">
                             <a href="https://aquagemaquascaping.in/" target="_blank"><img alt="gallery"
                                     class="block  h-full w-full  object-cover object-center"
                                     src="assets/images/aquascaping.png" /></a>
                         </div>
 
                     </div>
-                    <div class="md:flex md:w-1/2 flex-wrap px-1  " id="dark">
+                    <div class="gap-8 lg:gap-0 flex md:w-1/2 flex-wrap px-1  " id="dark">
 
-                        <div class="md:w-1/2 p-1 md:p-2.5  effect">
+                        <div class="w-3/4 mx-auto md:w-1/2 p-1 md:p-2.5  effect">
                             <a href="https://manjubhaskar02.github.io/FM-11-NFT-preview-card-component/"
                                 target="_blank"><img alt="gallery"
                                     class="block h-full w-full  object-cover object-center"
                                     src="assets/images/equilibrium.png" /></a>
                         </div>
-                        <div class="md:w-1/2 p-1 md:p-2.5 effect ">
+                        <div class="w-3/4 mx-auto md:w-1/2 p-1 md:p-2.5 effect ">
                             <a href="https://manjubhaskar02.github.io/FM-12-Order-Summary-Component/"
                                 target="_blank"><img alt="gallery"
                                     class="block  h-full w-full  object-cover object-center"
                                     src="assets/images/ordercard.png" /></a>
                         </div>
-                        <div class="md:w-full p-1 md:p-2.5 effect">
+                        <div class="w-3/4 mx-auto  md:w-full p-1 md:p-2.5 effect">
                             <a href="https://manjubhaskar02.github.io/FM-7-fylo-data-storage-component-master/"
                                 target="_blank"><img alt="gallery"
                                     class="block h-full w-full  object-cover object-center"
@@ -123,18 +142,19 @@
                         </div>
                     </div>
 
-                    <div class="md:flex md:w-1/2 flex-wrap px-1  " id="dark">
-                        <div class="w-full p-1 md:p-2.5 effect effect-four">
-                            <a href=""><img alt="gallery" class="block h-full w-full  object-cover object-center"
-                                    src="assets/images/test.png" /></a>
+                    <div class="gap-8 lg:gap-0 flex md:w-1/2 flex-wrap px-1  " id="dark">
+                        <div class="w-3/4 mx-auto md:w-full p-1 md:p-2.5 effect ">
+                            <a href="https://manjubhaskar02.github.io/Product-preview-card/" target="_blank"><img
+                                    alt="gallery" class="block h-full w-full  object-cover object-center"
+                                    src="assets/images/perfume.png" /></a>
                         </div>
-                        <div class="md:w-1/2 p-1 md:p-2.5  effect">
+                        <div class="w-3/4 mx-auto md:w-1/2 p-1 md:p-2.5  effect">
                             <a href="https://manjubhaskar02.github.io/FM-9-huddle-landing-page-with-alternating-feature-blocks/"
                                 target="_blank">
                                 <img alt="gallery" class="block h-full w-full  object-auto object-center"
                                     src="assets/images/huddle.png" /></a>
                         </div>
-                        <div class="md:w-1/2 p-1 md:p-2.5  effect">
+                        <div class="w-3/4 mx-auto md:w-1/2 p-1 md:p-2.5  effect">
                             <a href="https://manjubhaskar02.github.io/FM-10-Fylo-landing-page-with-two-columns/"
                                 target="_blank"> <img alt="gallery"
                                     class="block h-full w-full  object-auto object-center"
@@ -143,8 +163,8 @@
                     </div>
 
 
-                    <div class="md:flex md:w-1/2 flex-wrap px-1 " id="dark">
-                        <div class="w-full p-1 md:p-2.5  effect">
+                    <div class="gap-8 lg:gap-0 flex md:w-1/2 flex-wrap px-1 " id="dark">
+                        <div class="w-3/4 mx-auto md:w-full p-1 md:p-2.5  effect">
                             <a href="https://manjubhaskar02.github.io/FM-5-chat-app-css-illustration-master/"
                                 target="_blank"><img alt="gallery"
                                     class="block h-full w-full  object-auto object-center"
@@ -164,7 +184,7 @@
                         </div>
                     </div>
 
-                    <div class="md:flex md:w-1/2 flex-wrap px-1 " id="dark">
+                    <div class="gap-8 lg:gap-0 flex md:w-1/2 flex-wrap px-1 " id="dark">
 
                         <div class="hidden md:block md:w-1/2 p-1 md:p-2.5  effect">
                             <a href="https://manjubhaskar02.github.io/FM2--result-summary-component/"
@@ -177,7 +197,7 @@
                                     alt="gallery" class="block  h-full w-full  object-cover object-center"
                                     src="assets/images/QRcode.png" /></a>
                         </div>
-                        <div class="md:w-full p-1 md:p-2.5  effect">
+                        <div class="w-3/4 mx-auto  md:w-full p-1 md:p-2.5  effect ">
                             <a href="https://manjubhaskar02.github.io/FM3-testimonals-grid-section/"
                                 target="_blank"><img alt="gallery"
                                     class="block h-full w-full  object-auto object-center"
@@ -188,52 +208,93 @@
                 </div>
             </div>
 
-            <div id="skills" class=" mx-auto md:px-6 lg:pt-32  pb-24 ">
-                <div class="svg-wrapper text-center   ">
+            <div id="skills" class="py-20 mx-auto md:px-6 lg:pt-36  ">
+                <div class="svg-wrapper text-center  mx-auto ">
                     <svg height="70" width="300">
                         <rect class="rectangle" height="70" width="300" />
-                        <div class="text relative top-[-54px] text-2xl lg:text-3xl ">SKILLS</div>
+                        <div class="text relative top-[-54px] text-2xl lg:text-3xl heading ">SKILLS</div>
                     </svg>
                 </div>
-                <div class="skills lg:w-fit">
+                <div class="mx-auto w-3/4 skills lg:w-full lg:my-2">
                     <div class="skills-bar px-8 py-6">
-                        <div class="bar md:m-6 grid gap-10 font-bold text-base lg:text-xl ">
-                            <div class="">
+                        <div
+                            class="content lg:flex lg:flex-wrap lg:justify-between text-[#faebd7] bar md:m-6 grid gap-10 font-bold text-base lg:text-xl ">
+
+                            <div class="basis-2/5">
                                 <span>HTML</span>
                                 <div class="progress-line"><span class="html"></span></div>
                             </div>
 
-                            <div class="">
+                            <div class="basis-2/5">
                                 <span>CSS</span>
                                 <div class="progress-line"><span class="css"></span></div>
                             </div>
 
-                            <div class="">
+                            <div class="basis-2/5">
                                 <span>TAILWIND CSS</span>
                                 <div class="progress-line"><span class="tailwind"></span></div>
                             </div>
 
-                            <div class="">
+
+                            <div class="basis-2/5">
                                 <span>BOOTSTRAP</span>
                                 <div class="progress-line"><span class="bootstrap"></span></div>
                             </div>
 
-                            <div class="">
+                            <div class="basis-2/5">
                                 <span>JAVASCRIPT</span>
                                 <div class="progress-line"><span class="javascript"></span></div>
                             </div>
+
                         </div>
                     </div>
                 </div>
+            </div>
 
 
+            <div>
 
             </div>
 
+
+            <div id="contact" class=" mx-auto md:px-6 lg:pt-16 text-xl ">
+                <div class="svg-wrapper text-center mx-auto  ">
+                    <svg height="70" width="300">
+                        <rect class="rectangle" height="70" width="300" />
+                        <div class="text relative top-[-54px] text-2xl lg:text-3xl heading">CONTACT ME</div>
+                    </svg>
+                </div>
+                <div class="w-3/4 mx-auto lg:w-full   lg:flex justify-between gap-10 lg:pt-5 text-center">
+                    <div class="p-5 basis-1/2 infobox lg:p-10  ">
+                        <p class="heading text-[#c0eee7] underline underline-offset-8 ">Email Me At</p>
+                        <div class="my-4 hover:translate-y-[-2%] text-[#f1c5f1] hover:text-white"><a
+                                href="mailto:manju.bhaskar.jaya@gmail.com">manju.bhaskar.jaya@gmail.com</a></div>
+                        <button>
+                            <p
+                                class="mx-4 py-2 px-5 shadow-xl text-[#f1c5f1] hover:text-white hover:bg-[#17deefc7] bg-[#10000517] rounded-lg transition ease-in-out delay-150 hover:-translate-y-0.5 hover:scale-110 duration-300 ">
+                                <a href="mailto:manju.bhaskar.jaya@gmail.com">Send
+                                    email</a>
+                            </p>
+                        </button>
+                    </div>
+                    <div class="p-5 infobox flex flex-col basis-1/2 lg:py-10 mt-8 lg:mt-0 ">
+                        <p class="heading text-[#c0eee7] underline underline-offset-8">Find Me On</p>
+                        <ul class="contact-info flex gap-x-10 text-[#f1c5f1] self-center mt-4 lg:mt-10">
+                            <li class=""><a class="hover:text-[#fff]  " href="https://github.com/manjubhaskar02"
+                                    target="blank"><i class="fab fa-github"></i></i></a>
+                            </li>
+                            <li><a class="hover:text-[#fff] transition duration-150 ease-out hover:ease-in"
+                                    href="https://www.linkedin.com/in/manju-bhaskar-9b5759271/" target="blank"><i
+                                        class="fab fa-linkedin-in"></i></a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
     </main>
-
 
     <script src="./javascript.js"></script>
     <!-- Google tag (gtag.js) -->
